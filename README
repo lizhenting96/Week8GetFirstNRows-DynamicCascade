@@ -1,0 +1,45 @@
+Name: Zhenting Li
+Directed Research Week2
+Project Name: Week2GetFirstNRows-PoolVersion
+Summer 2020
+----------------------------------------------
+DESCRIPTION
+
+This is the new version of GetNFirstRows from a table in database. This version uses pool connection
+and does some simple validation check.
+
+----------------------------------------------
+ACKNOWLEDGE ANY OUTSIDE SOURCES
+
+Followed the tutorials of Conor Bailey on YouTube:
+- Implementing User Authentication With Node JS and PostgreSQL:
+  https://www.youtube.com/watch?v=vxu1RrR0vbw
+  https://github.com/conorbailey90/node-js-passport-login-postgresql
+----------------------------------------------
+ENVIRONMENT SET UP AND FILE RUNNING:
+
+- Please make sure that you've successfully installed npm by checking its version:
+$ node -v
+  Or you can update npm by:
+$ npm install npm@latest -g
+
+- Please go to the project directory, and use npm to install the following packages:
+$ npm install pg
+$ npm install express
+$ npm install -D nodemon
+$ npm install ejs
+$ npm install dotenv
+
+- Please change the database configuration .env to fit your database
+DB_USER=postgres
+DB_PASSWORD=password
+DB_HOST=localhost
+DB_PORT=5432
+DB_DATABASE=SummerDR
+
+- Run server.js by:
+$ npm run start
+or:
+$ npm run dev
+
+- Go to http://localhost:4000/ in your browser
